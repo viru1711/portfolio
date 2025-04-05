@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VIVEK BADGUJAR - Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      background: #726161;
+      color: #333;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: auto;
+      background: #e6e6e6;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(105, 92, 92, 0.1);
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    header h1 {
+      color: #0073e6;
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.1em;
+      color: #000000;
+    }
+
+    nav {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    nav a {
+      color: #0073e6;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    section h2 {
+      border-bottom: 2px solid #0073e6;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+      color: #0073e6;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .project {
+      border: 1px solid #259bf5;
+      border-radius: 5px;
+      padding: 15px;
+      background: #91ccff;
+      transition: transform 0.3s ease;
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .skills ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .skills li {
+      background: #338de7;
+      color: #fff;
+      padding: 8px 15px;
+      margin: 5px;
+      border-radius: 20px;
+      font-size: 0.9em;
+    }
+
+    .contact a {
+      color: #7e42ee;
+      text-decoration: none;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9em;
+      color: #777;
+      border-top: 1px solid #ddd;
+      padding-top: 10px;
+    }
+
+    /* Circular Image Styling */
+    .profile-pic {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 5px solid #0073e6;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+      margin: 20px auto;
+      display: block;
+    }
+
+    .swiper {
+      width: 100%;
+      max-width: 600px; /* Adjust as needed */
+      margin: auto;
+      padding-bottom: 30px;
+    }
+
+   .swiper-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Certifications Section */
+    #certifications {
+      text-align: center;
+      padding: 50px;
+      background-color: #d1d1d1;
+    }
+    
+    .cert-image {
+      width: 90%; /* Makes image responsive */
+      height: auto; /* Keeps the original aspect ratio */
+      max-width: 250px;
+      max-height: 150px;/* Ensures the image doesn’t get too large */
+      display: block; /* Removes extra space below images */
+      margin: 10px auto; /* Centers the image */
+      border-radius: 5px; /* Optional: Rounds the edges slightly */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    }
+
+
+    .certifications-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .certification {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 330px;
+      display: flex;
+      flex-direction: column;
+      align-self: centre;
+      justify-content: centre;
+      text-align: center;
+      overflow: hidden;
+      
+    }
+
+    .certification:hover {
+      transform: scale(1.05);
+    }
+
+    .certification h3 {
+      color: #007bff;
+      margin-bottom: 10px;
+    }
+
+    .certification p {
+      color: #333;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- Title Section -->
+    <section id="title-section">
+      <marquee behavior="alternate" direction="right" scrollamount="5" loop="3" bgcolor="yellow">
+        Welcome to My Digital Portfolio!
+      </marquee>
+    </section>
+
+    <!-- Circular Profile Photo -->
+    <img src="c:\Users\ASUS\Desktop\PORTFOLIO\WhatsApp Image 2025-02-21 at 11.32.07 PM - Copy.jpeg" alt="Vivek Badgujar" class="profile-pic">
+
+    <!-- Header with Name and Title -->
+    <header>
+      <h1>VIVEK BADGUJAR</h1>
+      <p>Electronics & Telecommunication Engineer | B.Tech Student</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        Hello! I am a B.Tech student in Electronics & Telecommunication Engineering at Savitribai Phule Pune University.
+        Passionate about electronics, PCB design, and microcontroller-based projects, I strive to bring innovation 
+        and efficiency to every project I undertake. I hail from the vibrant Jalgaon district and am always eager to learn and grow.
+      </p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects">
+        <div class="project">
+          <h3>Smart E-Water Bottle</h3>
+          <p>
+            A smart bottle that heats and cools water using a Peltier module and heating element, managed by an ESP32 microcontroller.
+          </p>
+        </div>
+        <div class="project">
+          <h3>Anti-Sleep Alarm</h3>
+          <p>
+            An Anti-Sleep Alarm is a safety device designed to prevent drowsiness-related accidents by alerting users when they show signs of sleepiness.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>✅Soldering</li>
+        <li>✅PCB Design (KiCad, Altium, Eagle, Proteus)</li>
+        <li>✅Programming Language (C, Python, HTML,</li>
+        <li>✅Microcontrollers (ESP32, Arduino)</li>
+        <li>✅Team Collaboration</li>
+      </ul>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications">
+      <h2>Certifications</h2>
+      <div class="certifications-container">
+        <div class="certification">+
+          <h3>Python-1 certificate </h3>
+          <p>Issued by: Cisco Networking Academy</p>
+          <p>Year: 2025</p>
+          <img src="c:\Users\ASUS\Pictures\Screenshots\Screenshot 2025-04-02 123549.png" alt="Embedded Systems & IoT Certificate" class="cert-image">
+        </div>
+        <div class="certification">
+          <h3>Python-2 certificate</h3>
+          <p>Issued by: Cisco Networking Academy</p>
+          <p>Year: 2025</p>
+          <img src="c:\Users\ASUS\Pictures\Screenshots\Screenshot 2025-04-02 123549.png" alt="Embedded Systems & IoT Certificate" class="cert-image">
+        </div>
+        <div class="certification">+
+            <h3>Python-1 certificate </h3>
+            <p>Issued by: Cisco Networking Academy</p>
+            <p>Year: 2025</p>
+            <img src="c:\Users\ASUS\Pictures\Screenshots\Screenshot 2025-04-02 123549.png" alt="Embedded Systems & IoT Certificate" class="cert-image">
+          </div>
+          <div class="certification">
+            <h3>Python-2 certificate</h3>
+            <p>Issued by: Cisco Networking Academy</p>
+            <p>Year: 2025</p>
+            <img src="c:\Users\ASUS\Pictures\Screenshots\Screenshot 2025-04-02 123549.png" alt="Embedded Systems & IoT Certificate" class="cert-image">
+          </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <p><strong>✉️Email:</strong> <a href="mailto:vivekbadgujar1711@gmail.com">vivekbadgujar1711@gmail.com</a></p>
+      <p><strong>ℹ️Linkedin:</strong> <a href="mailto:https://www.linkedin.com/in/vivek-badgujar-4a1997343">https://www.linkedin.com/in/vivek-badgujar-4a1997343</a></p>
+      <p><strong>🐙GitHub:</strong> <a href="https://github.com/viru1711">https://github.com/viru1711</a></p>
+      <p><strong>   Instagram:</strong> <a href="https://www.instagram.com/vivekbadgujar1711?igsh=dWxpY21scThrbHJl">https://www.instagram.com/vivekbadgujar1711?igsh=dWxpY21scThrbHJl</a></p>
+      <p><strong>📞Phone:</strong> <a href="tel:9623465725">9623465725</a></p>
+      <p><strong>🔗Website:</strong> <a href="https://virusemicon.com" target="_blank">virusemicon.com</a></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2025 VIVEK BADGUJAR. All Rights Reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>
